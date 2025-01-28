@@ -15,7 +15,7 @@ data.innerHTML=definedcap ;
 
 function btn(){
     const inputeddata = document.getElementById('input').value;
-    (inputeddata==definedcap)?alert('Successfull'):alert('Failed') ;
+    (inputeddata==definedcap)?alert('Successfull'):reload();
 }
 
 
