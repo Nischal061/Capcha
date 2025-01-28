@@ -8,32 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
       body{
+        background-color: rgb(207, 211, 211);
         height: 100%;
         width: 100%;
         position: fixed;
       }
       table{
-padding: 25px;
+padding: 15px;
  font-size: 50px;
   letter-spacing: 10px;
-   margin: 5px;
+   margin: 3px;
     user-select: none;
      background-color: rgb(242, 244, 247); 
-     transform: skewX(-10deg);
+     transform: skewX(-15deg);
 border-radius: 5px;
       }
       input{
-        padding: 5px; 
-        margin: 5px;
+        padding: 2px; 
+        margin: 2px;
       }
       .tab{
         margin-left: 300px;
+      }
+      #btn{
+        border-radius: 2px;
+        padding: 5px 25px 5px 25px;
+        /*  border: 1px rgb(29, 28, 28); */
+        background-color: aqua;
+        /* border: 1 px solid rgb(237, 239, 241) ; */
+        &:hover{
+          background-color: aqua;
+        }
+      }
+      .link{
+        text-decoration:none;
+        color: black;
+        padding: 50%;
+          margin-left: -65%;
+        /* align-items: center; */
+        &:hover{
+          color: white;
+        }
       }
     </style>
 </head>
 <body >
   <input type="text" id="input" autocomplete="off" placeholder="Enter Capcha here">
-<button id="btn" onclick="btn()">Post</button>
+<button id="btn" onclick="btn()"> <a href="#" class="link">Go</a> </button>
 
 <div class="tab" >
   <table  id="nan"></table>
