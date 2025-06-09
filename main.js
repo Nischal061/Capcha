@@ -15,7 +15,10 @@ data.innerHTML=definedcap ;
 
 function btn(){
     const inputeddata = document.getElementById('input').value;
-    (inputeddata==definedcap)?alert('Successfull'):reload();
+    (inputeddata==definedcap)?alert('Successfull'):
+    (inputeddata==''||inputeddata==undefined)?alert('Please Enter the Capcha'):
+    alert('Invalid Capcha Provided');
+    reload() ;
 }
 
 
