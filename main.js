@@ -13,6 +13,12 @@ let definedcap =(alphabet[alphalenght]+randomn+cap[caplength]+alphabet[re]+numle
 data.innerHTML=definedcap ;
 
 
+function listen(){
+const CapchaVoice = new SpeechSynthesisUtterance(definedcap);
+speechSynthesis.speak(CapchaVoice);
+}
+
+
 function btn(){
     const inputeddata = document.getElementById('input').value;
     (inputeddata==definedcap)?alert('Successfull'):
